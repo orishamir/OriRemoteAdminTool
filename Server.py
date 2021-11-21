@@ -1,3 +1,4 @@
+import threading
 import socket
 import os
 from shlex import split
@@ -64,7 +65,7 @@ def waitForRecv(cmdID, args):
 
 def remoteShell():
     global conn
-    import threading
+    # import threading
 
     def poop():
         while True:
